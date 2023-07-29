@@ -1,0 +1,17 @@
+.wed3{
+    height: 100vh;
+}
+.wed3 > img{
+    height: 450px;
+    width: 450px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.changecolor{
+    animation: color-change 5s ease-in-out infinite;
+}
+@keyframes color-change {
+    0% { color: rgb(255, 97, 97); }
+    50% { color: rgb(92, 92, 255); }
+    100% { color: rgb(250, 99, 242); }
+  }

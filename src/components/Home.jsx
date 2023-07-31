@@ -4,6 +4,10 @@ import wed3 from '../assets/wed3.jpg'
 import Typewriter from "typewriter-effect";
 import { Heading, Stack, VStack } from '@chakra-ui/react'
 import Hero from './Hero';
+import Banner from './Banner';
+import MyComponent from './MyComponent';
+import Hosted from './Hosted';
+
 const Home = () => {
   return (
     <>
@@ -25,6 +29,9 @@ const Home = () => {
       </VStack>
     </Stack>
     <Hero />
+    <Banner />
+    <MyComponent />
+    <Hosted />
     </>
   )
 }

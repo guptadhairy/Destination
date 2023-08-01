@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Oswald&family=Roboto&display=swap');
 .wed3{
     height: 100vh;
@@ -98,4 +99,6 @@
 .hostheading{
     font-family: 'Dancing Script', cursive;
 }
-
+.deals{
+  font-family: 'Dancing Script', cursive;
+}

@@ -1,46 +1,40 @@
-import { Text } from '@chakra-ui/react';
+import { Text, VStack } from '@chakra-ui/react';
 import React from 'react'
 import Marquee from "react-fast-marquee";
-// import gallery from '../assets/gallery.png'
-// import vrindavan from '../assets/vrindavan.webp'
-// import vrindavan2 from '../assets/vrindavan2.jpg'
-// import wed1 from '../assets/wed1.jpg'
-// import wed2 from '../assets/wed2.png'
-// import wed3 from '../assets/wed3.jpg'
 
 const Banner = () => {
     return (
-        <div>
-          <Marquee style={{marginTop: '30px'}} speed={100} pauseOnHover={true} direction='left' gradient={true}>
+        <VStack spacing={4} mt={[4, 6, 8]} mb={[4, 6, 8]}>
+          <Marquee style={{marginTop: '30px'}} speed={100} pauseOnHover={true} direction='left'>
             <div className='image_wraper' >
-              <Text className='my-outlined-text'>UNITE</Text>
+              <Text className='my-outlined-text' fontSize={['60px', '100px', '120px']}>UNITE</Text>
             </div>
             <div className='image_wraper' >
-              <Text className='my-outlined-text'>FOREVER</Text>
+              <Text className='my-outlined-text' fontSize={['60px', '100px', '120px']}>FOREVER</Text>
             </div>
             <div className='image_wraper' >
-              <Text className='my-outlined-text'>IN</Text>
+              <Text className='my-outlined-text' fontSize={['60px', '100px', '120px']}>IN</Text>
             </div>
             <div className='image_wraper' >
-              <Text className='my-outlined-text'>ETERNAL</Text>
+              <Text className='my-outlined-text' fontSize={['60px', '100px', '120px']}>ETERNAL</Text>
             </div>
             <div className='image_wraper' >
-              <Text className='my-outlined-text'>BLISS</Text>
+              <Text className='my-outlined-text' fontSize={['60px', '100px', '120px']}>BLISS</Text>
             </div>
             <div className='image_wraper' >
-              <Text className='my-outlined-text'>WELCOME</Text>
+              <Text className='my-outlined-text' fontSize={['60px', '100px', '120px']}>WELCOME</Text>
             </div>
             <div className='image_wraper' >
-              <Text className='my-outlined-text'>TO</Text>
+              <Text className='my-outlined-text' fontSize={['60px', '100px', '120px']}>TO</Text>
             </div>
             <div className='image_wraper' >
-              <Text className='my-outlined-text'>SHIVAYA</Text>
+              <Text className='my-outlined-text' fontSize={['60px', '100px', '120px']}>SHIVAYA</Text>
             </div>
             <div className='image_wraper' >
-              <Text className='my-outlined-text'>WEDDINGS.</Text>
+              <Text className='my-outlined-text' fontSize={['60px', '100px', '120px']}>WEDDINGS.</Text>
             </div>
           </Marquee>
-        </div>
+        </VStack>
       )
 }
 

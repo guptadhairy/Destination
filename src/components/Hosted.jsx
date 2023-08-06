@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Parallax } from 'react-parallax';
 import host from '../assets/host.png';
-import { Heading } from '@chakra-ui/react';
+import { Heading, Box } from '@chakra-ui/react';
 import { useInView } from 'react-intersection-observer';
 
 const Hosted = () => {
@@ -33,29 +33,35 @@ const Hosted = () => {
         blur={{ min: -15, max: 15 }}
         bgImage={host}
         bgImageAlt="the dog"
+        bgImageStyle={{
+          width: '100%',
+          height: 'auto',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
         strength={-200}
       >
-        <div
+        <Box
           ref={inViewRef}
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            height: '100vh',
-            color: 'white',
-          }}
+          display="flex"
+          flexDirection="column"
+          alignItems={['center', 'center', 'center', 'center', 'center']}
+          justifyContent={['center', 'center', 'center', 'center', 'center']}
+          height={['100vh', '70vh', '70vh', '70vh', '70vh']}
+          color="white"
+          textAlign="center"
+          px={[4, 8, 12, 16]}
         >
-          <Heading className='hostheading' fontSize={'4rem'} textAlign="center">
-            SHIVAYA'S host more than
+          <Heading className='hostheading' fontSize={['2rem', '2rem', '3rem', '3rem', '4rem']}>
+            We host more than
           </Heading>
-          <Heading className='hostheading' fontSize={'4rem'} textAlign="center">
-            <p>{inView ? count : 0}</p>
+          <Heading className='hostheading' fontSize={['2rem', '2rem', '3rem', '3rem', '4rem']} mb={[2, 4]}>
+            {inView ? count : 0}
           </Heading>
-          <Heading className='hostheading' fontSize={'4rem'} textAlign="center">
+          <Heading className='hostheading' fontSize={['2rem', '2rem', '3rem', '3rem', '4rem']}>
             Destination Weddings every year
           </Heading>
-        </div>
+        </Box>
       </Parallax>
     </div>
   );

@@ -7,14 +7,14 @@ const Stickysidebar = () => {
   return (
     <Stack direction={['column', 'row']} p={16}>
       <Box width={['100%', '850px']} position={['static', 'sticky']} top="250" alignSelf={['stretch', 'flex-start']}>
-        <VStack width="full">
+        <VStack width="full" color={'whiteAlpha.900'}>
           <Text alignSelf="flex-start">SOME POPULAR DESTINATIONS</Text>
           <Heading className="deals">Best Wedding Hotels in VRINDAVAN</Heading>
           <Button alignSelf="flex-start">View All Hotels</Button>
           <Button alignSelf="flex-start">Click to get Best Deals</Button>
         </VStack>
       </Box>
-      <VStack width="full">
+      <VStack width="full" color={'whiteAlpha.900'}>
         <div className='wrapper'>
         <img src={hotel1} alt="Best Hotel" />
         </div>

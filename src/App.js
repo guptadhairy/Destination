@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './components/Navigate/About';
 import Contact from './components/Navigate/Contact';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
+      <Toaster position="top-center" />
     </Router>
   );
 }

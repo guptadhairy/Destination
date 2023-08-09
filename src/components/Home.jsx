@@ -1,5 +1,5 @@
 import '../styles/home.css';
-import React, { useEffect } from 'react';
+import React from 'react';
 import wed3 from '../assets/wed3.jpg';
 import Typewriter from 'typewriter-effect';
 import { Heading, Stack, VStack } from '@chakra-ui/react';
@@ -8,24 +8,19 @@ import Banner from './Banner';
 import MyComponent from './MyComponent';
 import Hosted from './Hosted';
 import Stickysidebar from './Stickysidebar';
-
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import Background from './particles/Background';
+import { motion } from 'framer-motion';
+// import Background from './particles/Background';
 
 const Home = () => {
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
 
   return (
     <>
       <Stack direction={['column', 'row']} p={['2', '4', '6']} spacing={['2', '4', '6']}>
-        <VStack className='wed3' width={['full', '50%']} justifyContent={['center', 'flex-start']}>
+        <VStack className='wed3' width={['full', '50%']} justifyContent={['center', 'center']}>
           <img src={wed3} alt='Destination Wedding' />
         </VStack>
         <VStack width={['full', '50%']} justifyContent={'center'} alignItems={['center', 'flex-start']}>
-          <Heading color={'whiteAlpha.900'} mt={['1rem', '-3rem']} justifyContent={'center'} ml={['0','6rem']}>
+          <Heading mt={['1rem', '-3rem']} justifyContent={'center'} ml={['0','6rem']}>
             <Typewriter
               options={{
                 strings: ['Sacred Vows', ' Eternal Love'],
@@ -36,19 +31,32 @@ const Home = () => {
               }}
             />
           </Heading>
+          <motion.div initial={{
+            x: '100%',
+            opacity: 0,
+
+          }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+          }}
+          transition={{
+            delay: 0.4,
+            type: 'spring'
+          }}>
           <Heading className='changecolor' ml={['0', '6rem']}>
             Weddings in Vrindavan & Triyuginarayan Temple
           </Heading>
+          </motion.div>
         </VStack>
       </Stack>
 
       <Hero />
-      <Background />
       <Banner />
       <MyComponent />
       <Hosted />
       <Stickysidebar />
-      <hr style={{ height: '1px', backgroundColor: 'white', border: 'none' }} />
+      <hr style={{ height: '1.5px', backgroundColor: 'black', border: 'none' }} />
     </>
   );
 };

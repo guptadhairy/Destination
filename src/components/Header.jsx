@@ -23,7 +23,7 @@ const Header = () => {
       >
         <VStack>
           <Heading>Shivaaya Weddings</Heading>
-          <Text marginTop={'-8px'}>WEDDING ORGANIZER</Text>
+          <Text marginTop={'-8px'} marginLeft={'-30px'}>WEDDING ORGANIZER</Text>
         </VStack>
         <Menu isOpen={isOpen} onClose={onClose} onOpen={onOpen} />
       </Box>

@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 const Banner = () => {
     return (
         <VStack spacing={4} mt={[4, 6, 8]} mb={[4, 6, 8]}>
-          <Marquee style={{marginTop: '30px'}} speed={100} pauseOnHover={true} direction='left'>
+          <Marquee style={{marginTop: '30px'}} speed={100} pauseOnHover={false} direction='left'>
             <div className='image_wraper' >
               <Text className='my-outlined-text' fontSize={['60px', '100px', '120px']}>UNITE</Text>
             </div>

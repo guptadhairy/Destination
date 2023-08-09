@@ -5,7 +5,7 @@ import {FaYoutube,FaInstagram,FaFacebook} from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <Stack direction={['column','row']} p={10} justifyContent={'space-between'} color={'whiteAlpha.900'}>
+    <Stack bgColor={'whiteAlpha.900'} direction={['column','row']} p={10} justifyContent={'space-between'}>
         <VStack>
             <HStack>
                 <Link to={'/'}>Home |</Link>
